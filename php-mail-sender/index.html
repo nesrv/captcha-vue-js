@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <hello></hello>
+    <hello></hello>
+    {{user}}
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://form.vue"></script>
+
+  <script>
+    const app = Vue.createApp({});
+
+    app.component('hello', {
+      template: '<h2>Hello</h2>'
+    });
+    app.mount('#app');
+  </script>
+
+
+</body>
+
+
+</html>
